@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_second"
+    android:orientation="vertical"
+    android:paddingTop="90dp"
+    tools:context=".Sign_up">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Welcome !"
+        android:textAllCaps="false"
+        android:textAppearance="@style/Titre1"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_newacc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="50dp"
+            android:paddingRight="250dp"
+            android:paddingBottom="50dp"
+            android:text="New Account"
+            android:textAlignment="textStart"
+            android:textColor="@color/darkGray"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/email_signup"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:backgroundTint="@color/teal"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Enter your email address"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:singleLine="false" />
+
+            <EditText
+                android:id="@+id/name_signup"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:backgroundTint="@color/teal"
+                android:drawableLeft="@drawable/baseline_text_fields_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Enter your name"
+                android:inputType="text"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/password_signup"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:backgroundTint="@color/teal"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btn_signup_su"
+                android:layout_width="300dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/teal"
+                android:text="Sign Up" />
+
+            <Button
+                android:id="@+id/btn_connecter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="Already have an account? Sign in."
+                android:textColor="@color/darkGray"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

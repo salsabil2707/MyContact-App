@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_second"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".AddContact">
+
+    <ImageView
+        android:id="@+id/imageView_add"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baseline_person_24"
+        app:tint="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:drawableLeft="@drawable/baseline_text_fields_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Enter name"
+            android:inputType="text"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:drawableLeft="@drawable/baseline_phone_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Enter phone"
+            android:inputType="phone"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btn_editcontact"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/teal"
+            android:text="Edit Contact" />
+    </LinearLayout>
+
+</LinearLayout>
